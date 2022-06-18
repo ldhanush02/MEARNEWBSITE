@@ -1,0 +1,445 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Dis{
+  width:250px;
+  height:150px;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.example{
+  height: 600px;
+  
+}
+.myPic{
+  border-radius: 50%;
+  animation: mymove 1s infinite;
+  width: 80px;
+  height:80px;
+  padding: 2px;
+}
+
+@keyframes mymove {
+    from{   background: linear-gradient(to right, #26c6da, #43a047, #eeff41, #f9a825);}
+    to {  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3);}  
+}
+
+
+
+/*Form  */
+
+
+.Heading{
+         color: white;
+        background-origin: padding-box;
+       
+}
+
+
+span{
+  font-weight: bolder;
+  color: black;
+}
+.myPic:hover{
+  box-shadow: 2px 5px 10px purple;
+  transition: 0.7s;            
+  transform:scale(1.1);
+
+}
+.Title{
+  color: aqua;
+  font-weight: bold;
+}
+
+
+
+.btn-grad {background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+   font-family: 'Kings', cursive;
+   font-size: 20px;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+ .card{
+   width: 350px;
+   height: 740px;
+   background-color: #FFDEE9;
+   background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+   margin-top: 10px; 
+   margin: 30px;
+ }
+
+ .Title{
+   padding-top: 50px;
+ }
+
+
+ .downText{
+   font-size: 11px;
+ }
+ .body1{
+  background-color: #FA8BFF;
+  background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);  
+ }
+ .card:hover{
+  transition: 0.7s;            
+  transform:scale(1.1);
+  background-color: #FFFFFF;
+background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+ }
+
+ .nav-link{
+  font-family: 'Kings', cursive;
+  font-size: 24px;
+ }
+
+ .body-10{
+   background-image: url("https://www.bing.com/th?id=OHR.MoonlightRainier_EN-IN5322541927_1920x1080.jpg&rf=LaDigue_1920x1080.jpg");
+   background-attachment: fixed;
+ }
+ .head{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 80px;
+ }
+ .formtitle{
+  font-family: 'Libre Baskerville', serif;
+ }
+ .formup{
+  background-color:  #ffffff;
+  opacity: 0.6;
+ }
+ .card h5{
+  font-family: 'Cookie', cursive;
+  font-size: 25px ;
+ }
+
+ .card h3{
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px ;
+ }
+
+ /* Active */
+ .active{
+   text-decoration:underline !important;
+   border-style: double;
+   border-radius: 20%;
+ }
+ /* .active:hover{
+   background-color: white;
+ } */
+
+ 
+ .btn-grad2 {background-image: linear-gradient(to right, #FC354C 0%, #0ABFBC  51%, #FC354C  100%)}
+ .btn-grad2 {
+    margin: 10px ;
+    padding: 10px 80px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad2:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .parent{
+    justify-content: space-around;
+  }
+  
+  .btn-grad3{background-image: linear-gradient(to right, #fc00ff 0%, #00dbde  51%, #fc00ff  100%)}
+  .btn-grad3 {
+     margin: 5px;
+     padding: 10px 60px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     box-shadow: 0 0 20px #eee;
+     border-radius: 10px;
+     display: block;
+   }
+
+   .btn-grad3:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+   }
+  
+ 
+  @media (max-width: 580px){
+
+    .parent{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;  
+    }
+    .Title{
+      padding-top: 100px;
+    }
+    .card{
+      margin-left: 1rem;
+    }
+
+}
+
+
+/* New Added items */
+.App{
+  animation: zoomInDown 1s,
+             flip 0.5s 1s,
+             heartBeat 0.5s 1.5s,
+             fadeIn 1s 2s;
+  padding-top: 120px;
+  padding-left: 100px;
+}
+.title{
+  font-family: 'Kings', cursive;
+}
+body{
+  background-color: #eeeeee;
+}
+.login{
+  display: flex;
+  justify-content:space-around;
+  align-items:center;
+}
+.form{
+  margin-top: 70px;
+}
+@media (max-width:990px){
+  .login{
+    flex-direction: column ;
+  }
+  .App{
+    padding-top: 20px ;
+    padding-left: 0px;
+  }
+  .form{
+    margin-top: 0px;
+  }
+}
+
+
+/* Register */
+.tab{
+  padding-left: 220px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+}
+
+.googleFont{
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+}
+
+.terms{
+  font-size: 10px;
+}
+
+@media (max-width:990px){
+  .tab{
+    padding-left: 120px;
+  }
+}
+
+/* Logo */
+.logo{
+  animation-name: flip ;
+  animation-duration: 0.7s;
+  animation-iteration-count: 3;
+  margin-top: 100px;
+}
+.title1{
+  animation-name: jackInTheBox;
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+
+/* Logo1 */
+.logo1{
+  animation-name: zoomInUp;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+
+/* Navbar */
+.Nameicons{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+
+
+/* Animation */
+.shake{
+  animation: rollIn 1s linear 0s 1,
+              rollOut 1s linear 2.5s 1;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+  width: 500px;
+}
+
+/* Social Media icons */
+.socialicons{
+  font-size: 30px;
+}
+
+.socialiconsparent{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Search button */
+.searchicon{
+  font-size: 20px !important;
+  font-style: oblique;
+}
+
+.searchicons{
+  font-size: 25px ;
+}
+
+/* Search pop up */
+.SearchTitle{
+  font-family: 'Lobster', cursive;
+}
+
+
+/* Cancel trip */
+.CancelTitle{
+  font-family: 'Lobster', cursive;
+  font-size: 50px !important;
+}
+
+/* cancel icon in offcanvas */
+.cancelicons{
+  font-size: 45px ;
+}
+/* last warning */
+.lastwarning{
+  font-family: 'Arimo', sans-serif;
+  /* font-family: 'Libre Baskerville', serif; */
+  font-size: 30px;
+
+}
+
+/* MyAccount */
+.myPic1{
+  border-radius: 50%;
+  animation: mymove 1s infinite;
+  width: 180px;
+  height: 180px;
+  padding: 2px;
+}
+
+@keyframes mymove {
+    from{   background: linear-gradient(to right, #26c6da, #43a047, #eeff41, #f9a825);}
+    to {  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3);}  
+}
+
+.myPic1:hover{
+  box-shadow: 2px 5px 10px purple;
+  transition: 0.7s;            
+  transform:scale(1.1);
+
+}
+
+/* Display */
+.star{
+  font-size: 25px;
+}
+
+/* Like(Favorite) */
+.likeicon{
+  font-size: 20px;
+}
+
+/* Dislike */
+.likeicon1{
+  font-size: 20px;
+}
+
+/* Aeroplane */
+.likeicon2{
+  font-size: 25px;
+}
+
+/* Contact */
+.last{
+  font-family: 'Libre Baskerville', serif;
+}
+
+.brandlast{
+  font-family: 'Arimo', sans-serif;
+}
+/* @media (min-width: 585px) and (max-width:770px){
+.card{
+  margin-left: 80%;
+}
+}
+
+@media (min-width: 992px) and (max-width:1200px){
+
+.head{
+  font-size: 4rem !important;
+  padding-top: 10px;
+
+} 
+}
+.btn-grad{
+  margin-top: 30px ;
+}
+.card{
+  margin: 20px ;
+  margin-left: 10% ;
+  overflow-x: scroll;
+} */
+
+
+/* /* 
+@media (max-width: 576px){
+
+  .container{
+     flex-direction: column !important;
+     padding-left: 65px !important;
+
+  }
+  .card{
+    width: 14rem;
+    height: 21.5rem;
+  }
+}/* */
