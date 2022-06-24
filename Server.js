@@ -16,6 +16,22 @@ app.use('/product-api',Productapp)
 app.use('/trip-api',Tripapp)
 app.use('/favorite-api',Favoriteapp)
 
+// ---------------deployment--------------- 
+if (process.env.NODE_ENV==="production"){
+    app.use(exp.static(path.join(__dirname,"./build")))
+    app.get(/^\/(?!api).*/, (req, res) => { // don't serve api routes to react app
+      res.sendFile(path.join(__dirname, './build/index.html'));
+    });
+    app.get('*',(request,response)=>{
+      response.sendFile(path.resolve(__dirname,'build','index.html'))
+    })
+  }
+  
+  
+  // ---------------deployment----------------
+
+
+
 mclient.connect(Dburl)
 .then((client)=>{
     let dbObj=client.db("vnr2022");
@@ -43,4 +59,4 @@ app.use((error,request,response,next)=>{
     response.send({message:'Error',payload:`Error is ${error.message}`})
 })
 
-app.listen(process.env.PORT,()=>console.log("Server is listening at port number 4000"))
+app.listen(process.env.PORT || 4000,()=>console.log("Server is listening at port number 4000"))

@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.612b0d32.css",
+    "main.js": "/static/js/main.81852203.js",
+    "static/js/787.60968b66.chunk.js": "/static/js/787.60968b66.chunk.js",
+    "static/media/BG2.mp4": "/static/media/BG2.b5a8e3bb4cf3be021d5d.mp4",
+    "static/media/BG1.mp4": "/static/media/BG1.4f4ed8808e69aef94585.mp4",
+    "static/media/DhanushPic.jpeg": "/static/media/DhanushPic.1fa4e8f90161ad94a41a.jpeg",
+    "static/media/Travel.svg": "/static/media/Travel.40325a3e9a566f809847cdd050555318.svg",
+    "static/media/Account.svg": "/static/media/Account.c90d96c9caba89a6e23c363c77fb65fc.svg",
+    "static/media/Welcome.svg": "/static/media/Welcome.b6a961e7c2cb26b22d867535c4d20419.svg",
+    "static/media/ForgetPassword.svg": "/static/media/ForgetPassword.92f80558581f6d441ea61bdcbc5387e5.svg",
+    "static/media/Login.svg": "/static/media/Login.67f1418d6788ddcc54735dc86e21d301.svg",
+    "static/media/ChangePassword.svg": "/static/media/ChangePassword.108c59fad44b6507d58b167574edb63e.svg",
+    "static/media/Creditlogo.svg": "/static/media/Creditlogo.117828e642a4f3052ca7700ae6cd1074.svg",
+    "index.html": "/index.html",
+    "main.612b0d32.css.map": "/static/css/main.612b0d32.css.map",
+    "main.81852203.js.map": "/static/js/main.81852203.js.map",
+    "787.60968b66.chunk.js.map": "/static/js/787.60968b66.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.612b0d32.css",
+    "static/js/main.81852203.js"
+  ]
+}
