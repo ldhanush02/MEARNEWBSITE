@@ -7,7 +7,7 @@ function DeleteCard() {
     const { register, handleSubmit, formState:{errors} } = useForm();
     const onFormSubmit = (data) =>{
               console.log(data)
-              axios.delete("http://localhost:4000/product-api/delete-card/"+data.heading)
+              axios.delete("https://travellingagencywebsite.herokuapp.com/product-api/delete-card/"+data.heading)
               .then((response)=>{
                 alert((response.data.message));
                 console.log(response.data.payload);

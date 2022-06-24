@@ -23,7 +23,7 @@ const Reg = () => {
       data.Name=userObj.Name
         console.log(data)
         let token=localStorage.getItem("token");
-        axios.post("http://localhost:4000/trip-api/create-trip",data,{
+        axios.post("https://travellingagencywebsite.herokuapp.com/trip-api/create-trip",data,{
           headers:{ Authorization: "Bearer "+ token}
         })
         .then((response)=>{

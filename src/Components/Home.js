@@ -10,7 +10,7 @@ import axios from 'axios';
 function Home() {
 
   let [List1,setList1]=useState([]);
-  axios.get("http://localhost:4000/product-api/get-cards")
+  axios.get("https://travellingagencywebsite.herokuapp.com/product-api/get-cards")
   .then((response)=>{
     console.log(response.data.payload)
     setList1(response.data.payload)

@@ -31,7 +31,7 @@ function RegTable() {
       let [Datafinal,setDatafinal]=useState(0);
       useEffect(
         ()=>{
-          axios.delete('http://localhost:4000/trip-api/delete-trips/'+userObj.Name+'/'+Data)
+          axios.delete('https://travellingagencywebsite.herokuapp.com/trip-api/delete-trips/'+userObj.Name+'/'+Data)
             .then((response)=>{
               console.log(response.data.message)
             })
@@ -44,7 +44,7 @@ function RegTable() {
       )
 
     let [List1,setList1]=useState([]);
-        axios.get("http://localhost:4000/trip-api/get-trips/"+userObj.Name)
+        axios.get("https://travellingagencywebsite.herokuapp.com/trip-api/get-trips/"+userObj.Name)
         .then((response)=>{
           setList1(response.data.payload)
     

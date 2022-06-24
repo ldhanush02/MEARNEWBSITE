@@ -12,7 +12,7 @@ function ForgetPassword() {
     const { register, handleSubmit, formState:{errors} } = useForm();
     const onSubmit = data =>{ 
         console.log(data)
-        axios.put("http://localhost:4000/user-api/ForgetPassword",data)
+        axios.put("https://travellingagencywebsite.herokuapp.com/user-api/ForgetPassword",data)
         .then((response)=>{
             alert((response.data.message));
             if(response.data.message==="Password Changed"){

@@ -15,7 +15,7 @@ function Cardtwo(props){
         let data=props.item;
         data.Name=userObj.Name;
         let token=localStorage.getItem("token");
-        axios.post('http://localhost:4000/favorite-api/put-fav',props.item,{
+        axios.post('https://travellingagencywebsite.herokuapp.com/favorite-api/put-fav',props.item,{
             headers:{ Authorization: "Bearer "+ token}
           })
         .then((response)=>{

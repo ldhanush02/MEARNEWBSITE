@@ -11,7 +11,7 @@ function Favorites(){
         (state) => state.user
       );
         let [favdata,setfavdata]=useState([]);
-        axios.get('http://localhost:4000/favorite-api/get-fav/'+userObj.Name)
+        axios.get('https://travellingagencywebsite.herokuapp.com/favorite-api/get-fav/'+userObj.Name)
         .then((response)=>{
             setfavdata(response.data.payload)
         })
