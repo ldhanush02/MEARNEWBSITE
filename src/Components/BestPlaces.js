@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Cardtwo from "./Cardtwo";
 import videoBg from './Video/BG1.mp4';
 
+
 function BestPlaces(){
   let [List1,setList1]=useState([]);
     axios.get("https://travellingagencywebsite.herokuapp.com/product-api/get-cards")
