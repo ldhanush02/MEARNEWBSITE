@@ -1,18 +1,19 @@
 import axios from "axios";
 import { Button } from "react-bootstrap";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Cardtwo from "./Cardtwo";
 import videoBg from './Video/BG1.mp4';
 
 
 function BestPlaces(){
   let [List1,setList1]=useState([]);
+  useEffect(()=>{
     axios.get("https://travellingagencywebsite.herokuapp.com/product-api/get-cards")
     .then((response)=>{
       console.log(response.data.payload)
       setList1(response.data.payload)
     })
-    .catch((err)=>{alert('err occured')})
+    .catch((err)=>{alert('err occured')})},[]);
 
 
 
