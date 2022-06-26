@@ -47,9 +47,9 @@ const Reg = () => {
           </div>
  
        
-       <Form onSubmit={handleSubmit(onSubmit)} className=' text-center lead border border-6 w-50 body1 p-5 shadow-lg text-center border rounded border-2 border-dark  w-50 p-3 m-1 mt-3 mx-auto form1 bg-white'>
+       <Form onSubmit={handleSubmit(onSubmit)} className='formbreak text-center lead border border-6 w-75 mx-auto body1 p-5 shadow-lg text-center border rounded border-2 border-dark p-3 m-1 mt-3 form1 bg-white'>
     <div className='text-start'>
-    <h1 className='googleFont fw-bold'>Regisitration Form</h1>
+    <h1 className='googleFont fw-bold regtext'>Regisitration Form</h1>
     <p>Travel Anywhere in the World</p>
     <hr></hr>
     </div>

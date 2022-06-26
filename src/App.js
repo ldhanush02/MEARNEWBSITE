@@ -62,7 +62,7 @@ function App() {
               {
                 position:"absolute",
                 width:"100%",
-                height:"78%",
+                height:"84%",
                 left:"50%",
                 right:"50%",
                 objectFit:"cover",

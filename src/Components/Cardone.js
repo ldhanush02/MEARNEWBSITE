@@ -32,7 +32,7 @@ function Cardone(props){
     return(
   
         <div >
-                <div className="card p-2">
+                <div className="card p-2 mb-1 mt-1">
                 <img className="w-100 d-block mx-auto" src={props.item.pic}></img>
                 <div  style={{
                         textDecoration: "none",

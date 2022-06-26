@@ -26,7 +26,7 @@ function Cardfive(props){
     }
     return(
         <div>
-            <div className="fluid-container text-center p-5" style={
+            <div className="fluid-container text-center pt-5 pb-5" style={
                 {
                     backgroundImage: 
                     `url(${props.item.picbg})`  ,

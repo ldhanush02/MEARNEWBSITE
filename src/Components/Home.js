@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Cardfour from './Cardfour';
 import Cardone from './Cardone'
 import Cardthree from './Cardthree';
@@ -10,16 +10,18 @@ import axios from 'axios';
 function Home() {
 
   let [List1,setList1]=useState([]);
+  useEffect(()=>{
   axios.get("https://travellingagencywebsite.herokuapp.com/product-api/get-cards")
   .then((response)=>{
     console.log(response.data.payload)
     setList1(response.data.payload)
   })
-  .catch((err)=>{alert('err occured')})
+  .catch((err)=>{alert('err occured')})},{})
   let navigate=useNavigate();
   const tranfertoreg=()=>{
     navigate('/Reg')
   }
+
 
   return (
     <div>

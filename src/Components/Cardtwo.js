@@ -28,7 +28,7 @@ function Cardtwo(props){
     }
     return(
         <div>
-            <div className="fluid-container text-center p-5" style={
+            <div className="container-fluid text-center pt-5 pb-5" style={
                 {
                     backgroundImage: 
                     `url(${props.item.picbg})`  ,
