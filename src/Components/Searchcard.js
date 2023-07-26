@@ -30,7 +30,7 @@ function Searchcard() {
     const onSubmit = data =>{ 
         console.log(data)
         displayplace=data.SearchName
-        axios.get("http://localhost:4000/product-api/search-product/"+data.SearchName)
+        axios.get("https://travellingagencywebsite.onrender.com/product-api/search-product/"+data.SearchName)
         .then((response)=>{
             if(response.data.message==="Search found"){
                     console.log(response.data.payload)

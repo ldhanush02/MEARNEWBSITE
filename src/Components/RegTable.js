@@ -31,7 +31,7 @@ function RegTable() {
       let [Datafinal,setDatafinal]=useState(0);
       useEffect(
         ()=>{
-          axios.delete('http://localhost:4000/trip-api/delete-trips/'+userObj.Name+'/'+Data)
+          axios.delete('https://travellingagencywebsite.onrender.com/trip-api/delete-trips/'+userObj.Name+'/'+Data)
             .then((response)=>{
               console.log(response.data.message)
             })

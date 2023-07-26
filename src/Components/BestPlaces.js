@@ -8,7 +8,7 @@ import videoBg from './Video/BG1.mp4';
 function BestPlaces(){
   let [List1,setList1]=useState([]);
   useEffect(()=>{
-    axios.get("http://localhost:4000/product-api/get-cards")
+    axios.get("https://travellingagencywebsite.onrender.com/product-api/get-cards")
     .then((response)=>{
       console.log(response.data.payload)
       setList1(response.data.payload)

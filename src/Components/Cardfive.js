@@ -14,7 +14,7 @@ function Cardfive(props){
     let [deldata,setdeldata]=useState({});
     useEffect(()=>{
        
-        axios.delete('http://localhost:4000/favorite-api/delete-fav/'+deldata.Name+'/'+deldata.heading)
+        axios.delete('https://travellingagencywebsite.onrender.com/favorite-api/delete-fav/'+deldata.Name+'/'+deldata.heading)
         .then((response)=>{
             console.log(response.data.message)
         })

@@ -16,7 +16,7 @@ function AddCard() {
               let formData=new FormData();
               formData.append("userObj",JSON.stringify(Data));
               formData.append("photo",img);
-              axios.post("http://localhost:4000/product-api/create-card", formData)
+              axios.post("https://travellingagencywebsite.onrender.com/product-api/create-card", formData)
               .then((response)=>{
                   alert((response.data.message));
               })

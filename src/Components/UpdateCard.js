@@ -15,7 +15,7 @@ function UpdateCard() {
               let formData=new FormData();
               formData.append("userObj",JSON.stringify(Data));
               formData.append("photo",img);
-              axios.put("http://localhost:4000/product-api/update-card", formData)
+              axios.put("https://travellingagencywebsite.onrender.com/product-api/update-card", formData)
               .then((response)=>{
                   alert((response.data.message));
               })
