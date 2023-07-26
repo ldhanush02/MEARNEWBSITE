@@ -20,7 +20,7 @@ function ChangePassword() {
     const { register, handleSubmit, formState:{errors} } = useForm();
     const onSubmit = data =>{ 
         console.log(data)
-        axios.put("https://travellingagencywebsite.herokuapp.com/user-api/ChangePassword",data)
+        axios.put("http://localhost:4000/user-api/ChangePassword",data)
         .then((response)=>{
             alert((response.data.message));
             if(response.data.message==="Password Changed"){
